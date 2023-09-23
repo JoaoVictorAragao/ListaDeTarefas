@@ -1,7 +1,7 @@
 <?php
 
 	$acao = 'recuperarTarefasPendentes';
-	require 'tarefa_controller.php';
+	require 'app_lista_tarefas/tarefa_controller.php';
 
 	/*
 	echo '<pre>';
@@ -17,10 +17,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>App Lista Tarefas</title>
 
-		<link rel="stylesheet" href="barra_acesso/acess.css" />
+		<link rel="stylesheet" href="app_lista_tarefas_public/barra_acesso/acess.css" />
 		<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
-		<link rel="shortcut icon" href="img/logo.png">
-		<link rel="stylesheet" href="css/estilo.css">
+		<link rel="shortcut icon" href="app_lista_tarefas_public/img/logo.png">
+		<link rel="stylesheet" href="app_lista_tarefas_public/css/estilo.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
@@ -93,7 +93,7 @@
 
 
 <!-- Script de acessibildiade-->
-<script src="barra_acesso/script.js"></script>
+<script src="app_lista_tarefas_public/barra_acesso/script.js"></script>
 
 <!-- Inclusão Libras -->
   <div vw class="enabled">
@@ -114,17 +114,17 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-2">
-                <img src="barra_acesso/bandeira.png" alt="Governo do Amapá" />
+                <img src="app_lista_tarefas_public/barra_acesso/bandeira.png" alt="Governo do Amapá" />
             </div>
 
             <div class="col-sm-7" style="text-align: center; color: white; margin-top:5px">
                 <p>
                 <span style="vertical-align: middle;"><a href="#" data-toggle="modal" data-target="#myAcc" accesskey="5" style="color:white">Acessibilidade:</a></span>
-                <button type="button" class="btn btn-outline-light" data-toggle="tooltip" data-placement="bottom" aria-label="Add Contrast" id="contrast" title="Alto Contraste" style="height:26px;padding:4px;line-height:.5;"><img src="barra_acesso/contrast.png"></button>
-                <button type="button" class="btn btn-outline-light" data-toggle="tooltip" data-placement="bottom" aria-label="Increase Font" id="increaseFont" title="Aumentar Fonte" style="height:26px;padding:4px;line-height:.5;"><img src="barra_acesso/increase.png"></button>
-                <button type="button" class="btn btn-outline-light" data-toggle="tooltip" data-placement="bottom" id="decreaseFont" title="Reduzir Fonte" style="height:26px;padding:4px;line-height:.5;"><img src="barra_acesso/decrease.png"></button>
-                <button type="button" class="btn btn-outline-light" data-toggle="tooltip" data-html="true" id="teclado" title="<b>ATALHOS</b> <br> [1] Para Conteúdo <br> [2] Para Menu <br> [3] Para Rodapé <br> [4] Para Busca <br> [5] Sobre Acessibilidade" style="height:26px;padding:4px;line-height:.5;"><img src="barra_acesso/keyboard.png"></button>
-                <span style="margin-left: 50px"><a id="sitemap" class="btn btn-outline-light" href="#" onclick="window.open(baseUrl = getBaseUrl())" target"_blank" data-toggle="tooltip" data-placement="bottom" title="Mapa do Site" style="height:26px;padding:4px;line-height:.5;"><img src="barra_acesso/sitemap.png"></a></span> 
+                <button type="button" class="btn btn-outline-light" data-toggle="tooltip" data-placement="bottom" aria-label="Add Contrast" id="contrast" title="Alto Contraste" style="height:26px;padding:4px;line-height:.5;"><img src="app_lista_tarefas_public/barra_acesso/contrast.png"></button>
+                <button type="button" class="btn btn-outline-light" data-toggle="tooltip" data-placement="bottom" aria-label="Increase Font" id="increaseFont" title="Aumentar Fonte" style="height:26px;padding:4px;line-height:.5;"><img src="app_lista_tarefas_public/barra_acesso/increase.png"></button>
+                <button type="button" class="btn btn-outline-light" data-toggle="tooltip" data-placement="bottom" id="decreaseFont" title="Reduzir Fonte" style="height:26px;padding:4px;line-height:.5;"><img src="app_lista_tarefas_public/barra_acesso/decrease.png"></button>
+                <button type="button" class="btn btn-outline-light" data-toggle="tooltip" data-html="true" id="teclado" title="<b>ATALHOS</b> <br> [1] Para Conteúdo <br> [2] Para Menu <br> [3] Para Rodapé <br> [4] Para Busca <br> [5] Sobre Acessibilidade" style="height:26px;padding:4px;line-height:.5;"><img src="app_lista_tarefas_public/barra_acesso/keyboard.png"></button>
+                <span style="margin-left: 50px"><a id="sitemap" class="btn btn-outline-light" href="#" onclick="window.open(baseUrl = getBaseUrl())" target"_blank" data-toggle="tooltip" data-placement="bottom" title="Mapa do Site" style="height:26px;padding:4px;line-height:.5;"><img src="app_lista_tarefas_public/barra_acesso/sitemap.png"></a></span> 
                     <span style="vertical-align: middle;">Mapa do Site</span>
                 </p> 
 
@@ -138,7 +138,7 @@
                 <form>
                 <div class="form-row">
                     <div class="col-sm-2">
-                    <img src="barra_acesso/brasao_topo.png" style="max-height:31px; margin-top: 2px;" alt="Brazão do Governo">
+                    <img src="app_lista_tarefas_public/barra_acesso/brasao_topo.png" style="max-height:31px; margin-top: 2px;" alt="Brazão do Governo">
                     </div>
                     <div class="col-sm-10">
                     <select class="form-control" id="exampleFormControlSelect1" style="height: 26px; font-size: 0.8rem; margin-top: 5px;">
@@ -230,7 +230,7 @@
 		<nav class="navbar navbar-light bg-light">
 			<div class="container">
 				<a class="navbar-brand" href="#">
-					<img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+					<img src="app_lista_tarefas_public/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
 					App Lista Tarefas
 				</a>
 			</div>
@@ -241,8 +241,8 @@
 				<div class="col-md-3 menu">
 					<ul class="list-group">
 						<li class="list-group-item active"><a href="#">Tarefas pendentes</a></li>
-						<li class="list-group-item"><a href="nova_tarefa.php">Nova tarefa</a></li>
-						<li class="list-group-item"><a href="todas_tarefas.php">Todas tarefas</a></li>
+						<li class="list-group-item"><a href="app_lista_tarefas_public/nova_tarefa.php">Nova tarefa</a></li>
+						<li class="list-group-item"><a href="app_lista_tarefas_public/todas_tarefas.php">Todas tarefas</a></li>
 					</ul>
 				</div>
 
