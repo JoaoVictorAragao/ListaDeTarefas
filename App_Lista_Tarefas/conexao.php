@@ -1,27 +1,28 @@
 <?php
 
-    class Conexao{
-        private $host = 'localhost';
-        private $dbname = 'tarefas';
-        private $user = 'root';
-        private $pass = '';
+class Conexao {
 
-        public function conectar(){
-            try{
+	private $host = 'localhost';
+	private $dbname = 'tarefas';
+	private $user = 'root';
+	private $pass = '';
 
-                $conn = new PDO(
-                    "mysql:host=$this->host;dbname=$this->dbname",
-                    "$this->user",
-                    "$this->pass"
-                );
+	public function conectar() {
+		try {
 
-                return $conn;
+			$conexao = new PDO(
+				"mysql:host=$this->host;dbname=$this->dbname",
+				"$this->user",
+				"$this->pass"				
+			);
 
-            }catch (PDOException $e){
-                echo '<p>'. $e->getMessage().'<p>';
-            }
-        }
+			return $conexao;
 
-    }
+
+		} catch (PDOException $e) {
+			echo '<p>'.$e->getMessage().'</p>';
+		}
+	}
+}
 
 ?>
